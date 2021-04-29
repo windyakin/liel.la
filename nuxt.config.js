@@ -7,16 +7,21 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'liel.la',
+    title: 'Liel.la! - 私を叶える物語',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: '私を叶える物語' },
+      { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:site', content: '@MITLicense' },
+      { name: 'twitter:title', content: 'Liel.la!' },
+      { name: 'twitter:description', content: '私を叶える物語' },
+      { name: 'twitter:image', content: '/thumbnail.png' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
