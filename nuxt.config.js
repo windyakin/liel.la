@@ -19,7 +19,7 @@ export default {
       { name: 'twitter:site', content: '@MITLicense' },
       { name: 'twitter:title', content: 'Liel.la!' },
       { name: 'twitter:description', content: '私を叶える物語' },
-      { name: 'twitter:image', content: '/thumbnail.png' },
+      { name: 'twitter:image', content: 'https://liel.la/thumbnail.png' },
     ],
     link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
   },
