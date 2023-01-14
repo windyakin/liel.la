@@ -1,12 +1,13 @@
-name: Publish to GitHub Pages
+name: CI
 
 on:
   push:
     branches:
       - master
+  pull_request:
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,10 +20,3 @@ jobs:
       - run: npm install
 
       - run: npm run start
-
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          cname: liel.la
-          allow_empty_commit: true
